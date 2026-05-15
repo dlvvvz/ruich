@@ -5,10 +5,12 @@
 <script lang="ts">
 	let {
 		children,
+		href,
 		size = 'medium' as ButtonSize,
 	} : {
 		children: any,
-		size: ButtonSize,
+		href? string,
+		size?: ButtonSize,
 	} = $props();
 </script>
 
