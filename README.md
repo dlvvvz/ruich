@@ -5,7 +5,7 @@
 A small svelte ui lib
 
 ## Dark/Light mode
-Use `mode-watcher`
+Use ![mode-watcher](https://github.com/svecosystem/mode-watcher) [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)]([#](https://www.npmjs.com/package/mode-watcher))
 
 ### Install ModeWatcher:
   `npm install mode-watcher`
@@ -33,3 +33,9 @@ Use `mode-watcher`
 
 - [ ] Button
 - [x] Flex
+- [ ] Field
+- [ ] Kbd
+- [ ] Badge
+- [ ] Avatar
+- [ ] Alert dialog
+- [ ] Spinner
