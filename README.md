@@ -32,4 +32,4 @@ Use `mode-watcher`
 ## ToDo
 
 - [ ] Button
-- [ ] Flex
+- [x] Flex

@@ -2,31 +2,34 @@
    import type { Sizes, Appearances } from '$lib/ruich/types.ts';
    export type ButtonSize = Sizes;
    export type ButtonAppearance = Appearances;
+
+   export interface ButtonProps {
+      children: any,
+      onclick: (e : MouseEvent) => void;
+		href?: string,
+		size?: ButtonSize,
+      appearance?: ButtonAppearance;
+      class?: string;
+   }
 </script>
 
 <script lang="ts">
 	import '$lib/app.css'
-   import type { Snippet } from 'svelte';
 	let {
 		children,
       onclick = () => {},
 		href,
 		size = 'medium',
       appearance = 'outline',
-	} : {
-		children: Snippet,
-      onclick: (e : MouseEvent) => void;
-		href?: string,
-		size?: ButtonSize,
-      appearance?: ButtonAppearance;
-	} = $props();
+      class: className = '',
+	} : ButtonProps = $props();
 </script>
 {#if href}
-<a href="{href}" class="button {size} {appearance}" onclick={onclick}>
+<a href="{href}" class="button {size} {appearance} {className}" onclick={onclick}>
 	{@render children()}
 </a>
 {:else}
-<button class="button {size} {appearance}" onclick={onclick}>
+<button class="button {size} {appearance} {className}" onclick={onclick}>
 	{@render children()}
 </button>
 {/if}
