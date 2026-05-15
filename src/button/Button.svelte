@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+	import '$lib/app.css'
 	let {
 		children,
 		href,
@@ -13,10 +14,15 @@
 		size?: ButtonSize,
 	} = $props();
 </script>
-
+{#if href}
+<a href="{href}" class="button">
+	{@render children()}
+</a>
+{:else}
 <button class="button {size}">
 	{@render children()}
 </button>
+{/if}
 
 <style>
 	.button{
