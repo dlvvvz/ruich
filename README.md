@@ -1,10 +1,10 @@
-# ruich
+# Ruich Ui
 <p align="center">
   <img src="./Ruich.png" />
 </p>
 A small svelte ui lib
 
-# Dark/Light mode
+## Dark/Light mode
 Use `mode-watcher`
 
 ### Install ModeWatcher:
@@ -29,3 +29,7 @@ Use `mode-watcher`
   Swith mode
 </button>
 ```
+## ToDo
+
+- [ ] Button
+- [ ] Flex

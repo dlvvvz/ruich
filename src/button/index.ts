@@ -3,5 +3,4 @@ export { Button };
 
 export {
 	type ButtonSize
-} from './Svelte';
-
+} from './Button.svelte';

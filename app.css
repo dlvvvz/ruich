@@ -3,8 +3,30 @@
 
 
    /* Colors */
+   --color-text: black;
+
+   --color-background: #fafafa;
+   --color-background-box: #fff;
+
+   --color-border: #e4e4e4;
+
+   --color-theme: rgb(52, 120, 225);
+   --color-theme-text: white;
+
+   --color-neutral: black;
+   --color-neutral-text: white;
+
 
 }
 :root.dark{
    /* Colors */
+   --color-text: white;
+   
+   --color-background: black;
+   --color-background-box: #0a0a0a;
+
+   --color-border: #252525;
+
+   --color-neutral: white;
+   --color-neutral-text: black;
 }
